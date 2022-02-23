@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    min-height: 10vh;
+    
+}
+
+.gallery-display-area{
+    overflow: hidden;
+    height: 820px;
+    width: 1080px;
+    margin: 1 auto;
+}
+
+.gallery-wrap{
+    width: 500%;
+    animation: slideShow 18s infinite;
+}
+
+.image{
+    float: left;
+    height: 608px;
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 1px -webkit-gradient(linear, right top, right bottom, 
+    from(transparent), to(rgba(255, 255, 255, 0.3)));
+}
+
+@keyframes slideShow{
+    20%{
+        margin-left: 0;        
+    }
+    30%{
+        margin-left: -100%;        
+    }
+    40%{
+        margin-left: -100%;        
+    }
+    50%{
+        margin-left: -200%;        
+    }
+    60%{
+        margin-left: -200%;        
+    }
+    70%{
+        margin-left: -300%;        
+    }
+    80%{
+        margin-left: -300%;        
+    }
+}
+
